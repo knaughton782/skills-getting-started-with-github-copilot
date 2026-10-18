@@ -51,6 +51,18 @@ activities = {
         "max_participants": 24,
         "participants": []
     },
+    "Soccer Club": {
+        "description": "Practice soccer skills and play friendly matches",
+        "schedule": "Mondays, 3:30 PM - 5:00 PM",
+        "max_participants": 22,
+        "participants": []
+    },
+    "Volleyball Club": {
+        "description": "Learn volleyball techniques and play team games",
+        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": []
+    },
     "Art Club": {
         "description": "Explore drawing, painting, and other visual arts",
         "schedule": "Mondays, 3:30 PM - 4:30 PM",
@@ -63,6 +75,18 @@ activities = {
         "max_participants": 20,
         "participants": []
     },
+    "Music Club": {
+        "description": "Explore music through singing and playing instruments",
+        "schedule": "Tuesdays, 3:30 PM - 4:30 PM",
+        "max_participants": 16,
+        "participants": []
+    },
+    "Photography Club": {
+        "description": "Learn photography techniques and create visual projects",
+        "schedule": "Thursdays, 3:30 PM - 4:30 PM",
+        "max_participants": 14,
+        "participants": []
+    },
     "Debate Club": {
         "description": "Build research, reasoning, and public speaking skills",
         "schedule": "Tuesdays, 3:30 PM - 4:30 PM",
@@ -73,6 +97,18 @@ activities = {
         "description": "Explore scientific ideas through experiments and projects",
         "schedule": "Fridays, 3:30 PM - 4:30 PM",
         "max_participants": 18,
+        "participants": []
+    },
+    "Math Club": {
+        "description": "Solve challenging problems and explore mathematical ideas",
+        "schedule": "Mondays, 3:30 PM - 4:30 PM",
+        "max_participants": 16,
+        "participants": []
+    },
+    "Creative Writing Club": {
+        "description": "Develop writing skills and share original stories and poetry",
+        "schedule": "Fridays, 3:30 PM - 4:30 PM",
+        "max_participants": 16,
         "participants": []
     }
 }
