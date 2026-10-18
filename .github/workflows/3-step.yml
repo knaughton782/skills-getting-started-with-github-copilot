@@ -6,6 +6,7 @@ on:
       - "accelerate-with-copilot"
     paths:
       - "src/static/**"
+      - ".github/workflows/3-step.yml"
 
 permissions:
   contents: read
@@ -31,6 +32,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Resolve default branch SHA
+        id: default-branch
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git fetch origin "$DEFAULT_BRANCH"
+          echo "sha=$(git rev-parse FETCH_HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Get response templates
         uses: actions/checkout@v5
@@ -62,7 +71,7 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v47
         with:
-          base_sha: ${{ github.event.repository.default_branch }}
+          base_sha: ${{ steps.default-branch.outputs.sha }}
           files: |
             src/static/app.js
             src/static/styles.css
